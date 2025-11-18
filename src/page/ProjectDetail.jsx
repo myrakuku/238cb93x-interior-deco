@@ -1,12 +1,19 @@
 import React from "react";
 import Nav from "../component/Nav";
 import ProjectImage1 from "../image/banner-1.jpg";
-import Img_video from "../image/image-video.jpg";
 import Img1 from "../image/image-10.jpg";
 import Img2 from "../image/image-11.jpg";
 import Img3 from "../image/image-12.jpg";
+import VideoEmbed from '../component/VideoEmbed'; // Import your component
+
 
 const ProjectData_Detail = () => {
+
+const youtubeEmbedUrl = [
+        "t7iDIZ0RuE4",
+        "TXbx7j-04RY"
+]
+
 
     const projectData = [
         {
@@ -30,10 +37,6 @@ const ProjectData_Detail = () => {
         Img3
     ];
 
-    const ProjectVideo = [
-        Img_video
-    ];
-
     return(
     <>
         <Nav/>
@@ -41,7 +44,7 @@ const ProjectData_Detail = () => {
             {projectData.map(projectData => (
                 <div key={projectData.id} className="grid md:grid-cols-2 my-5">
                 <div className="">
-                    <img src={ProjectImage1} className="w-[400px] h-[300px] md:w-[500px] md:h-[375px] object-cover"></img>
+                    <img src={ProjectImage1} className="w-[400px] h-[300px] md:w-[500px] md:h-[375px] object-cover" alt=""></img>
                 </div>
                 <div className="pl-2 pt-2 md:pt-0">
                     <h4 className="text-2xl font-bold text-amber-900">{projectData.title}</h4>
@@ -61,20 +64,18 @@ const ProjectData_Detail = () => {
                 <div className="flex flex-wrap gap-5">
                 {ProjectImg.map((image, index) => (
                     <div key={index}>
-                        <img src={image} alt={`Project Image ${index + 1}`} className="w-[500px] h-auto rounded-md"></img>
+                        <img src={image} alt={`Project ${index + 1}`} className="w-[500px] h-auto rounded-md"></img>
                     </div>
                 ))}
                 </div>
             </div>
             <div className="pt-5">
-                <p className="text-2xl font-bold text-amber-900">影片 Video</p>
-                <div className="flex flex-wrap gap-5">
-                {ProjectVideo.map((video, index) => (
-                    <div key={index}>
-                        <video src={video} alt={`Project Image ${index + 1}`} className="w-[500px] h-auto rounded-md"></video>
+                <p className="text-2xl font-bold text-amber-900 mb-5">影片 Video</p>
+                {youtubeEmbedUrl.map((video, index) => (
+                    <div className="flex flex-wrap gap-5 mb-5">
+                        <VideoEmbed embedUrl={`https://www.youtube.com/embed/${video}`} title="Embedded YouTube Video" />
                     </div>
                 ))}
-                </div>
             </div>
         </section>
     </>

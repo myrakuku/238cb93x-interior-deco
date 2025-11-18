@@ -33,7 +33,7 @@ const ProjectData_Interior = () => {
             {projectData.map(projectData => (
                 <div key={projectData.id} className="grid md:grid-cols-2 my-5">
                 <div className="">
-                    <img src={ProjectImage1} className="w-[400px] h-[300px] md:w-[500px] md:h-[375px] object-cover"></img>
+                    <img src={ProjectImage1} className="w-[400px] h-[300px] md:w-[500px] md:h-[375px] object-cover" alt=""></img>
                 </div>
                 <div className="pl-2 pt-2 md:pt-0">
                     <h4 className="text-2xl font-bold text-amber-900">{projectData.title}</h4>
