@@ -7,12 +7,12 @@ const CompanyInfo = () => {
     const Companyinfo_data = [
         {
             company_name: "啟發裝飾工程有限公司",
-            company_description: "Lorem ipsum turpis nec nisi ullamcorper velit consectetur Lorem ipsum turpis nec nisi ullamcorper velit consectetur Lorem ipsum turpis nec nisi ullamcorper velit consectetur Lorem ipsum turpis nec nisi ullamcorper velit consectetur  Lorem ipsum turpis nec nisi ullamcorper velit consectetur ....",
-            company_phone: "12345678",
-            company_email: "xxxxxx@insfsfoi.com",
-            company_address: "xxxxxx",
-            company_wechat_link: "http://xxxxxxx.com",
-            company_whatsapp_link: "http://xxxxxxx.com",
+            company_description: "自成立以來，啟發裝飾工程已深耕本土40載。我們傳承兩代工藝，見證行業變遷，始終秉承「品質為根、信譽為本」的初心，累積上萬宗成功案例。選擇我們，就是選擇一份安心與承傳。",
+            company_phone: "92233353",
+            company_email: "",
+            company_address: "香港",
+            company_wechat_link: "",
+            company_whatsapp_link: "https://wa.me/92233353",
             company_instagram_link: "https://www.instagram.com/inspiration.de.limited/"
         }
     ];
@@ -38,7 +38,7 @@ const CompanyInfo = () => {
                     </div>
                 </div>
 
-            <div className='m-10 flex justify-center items-center gap-10'>
+            <div className='mt-[50px] flex justify-center items-center gap-10'>
             <Link to={Companyinfo_data.company_wechat_link} >
                 <svg className='w-[48px] h-[48px]' viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg" fill="none"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path stroke="#ad774e" stroke-linecap="round" stroke-linejoin="round" stroke-width="8" d="M56 68a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm34 0a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"></path><path stroke="#ad774e" stroke-linecap="round" stroke-linejoin="round" stroke-width="12" d="M170 115.24c0-19.305-20.141-35.392-45.044-35.392-24.902 0-45.043 16.087-45.043 35.392 0 19.304 20.141 35.392 45.043 35.392a55.928 55.928 0 0 0 15.122-2.06l17.053 8.494-5.342-13.449A33.588 33.588 0 0 0 170 115.24Z"></path><path stroke="#ad774e" stroke-linecap="round" stroke-linejoin="round" stroke-width="8" d="M109 107a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm32 0a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"></path><path stroke="#ad774e" stroke-linecap="round" stroke-linejoin="round" stroke-width="12" d="M128.174 79.978c0-24.903-23.744-45.044-53.087-45.044C45.744 34.934 22 54.946 22 79.849a42.988 42.988 0 0 0 20.784 35.392l-7.915 16.087 18.339-10.489a60.859 60.859 0 0 0 21.878 4.055 62.617 62.617 0 0 0 6.435-.387"></path></g></svg>
             </Link>

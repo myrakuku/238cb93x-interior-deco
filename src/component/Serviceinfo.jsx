@@ -6,13 +6,13 @@ const ServiceInfo = () => {
     const Serviceinfo_data = [
         {
             id: 1,
-            title: "前期規劃與設計服務",
-            description: "Lorem ipsum turpis nec nisi ullamcorper velit consectetur Lorem ipsum turpis nec nisi ullamcorper velit consectetur Lorem ipsum turpis nec nisi ullamcorper velit consectetur Lorem ipsum turpis nec nisi ullamcorper velit consectetur  Lorem ipsum turpis nec nisi ullamcorper velit consectetur ....",
+            title: "啟發裝修：為您實現夢想家居的全面藍圖",
+            description: "啟發裝飾工程深知，家是生活的縮影。我們提供的「全屋裝修」服務，是一次從無到有的完整規劃，旨在為您打造一個兼具美感、功能與舒適度的理想生活空間。我們的服務始於深入的溝通，由專業設計師與您共同探討生活習慣與未來展望。施工階段，我們嚴選建材，由經驗豐富的工程團隊進行拆除、水電泥作、木工、油漆等一站式作業，確保工程流暢、品質穩定。無論是新居入伙、舊屋翻新，我們都能將老舊格局優化，解決採光、收納等難題，提升生活品質。選擇啟發，不僅是選擇裝修，更是選擇一位值得信賴的夥伴。我們以40年的工藝傳承為後盾，承諾透明報價、準時完工，致力於將您的藍圖完美實現，讓家成為真正的安心歸宿。",
         },
         {
             id: 2,
-            title: "基礎工程施工服務",
-            description: "Lorem ipsum turpis nec nisi ullamcorper velit consectetur....",
+            title: "啟發裝修專業水電維修：守護您家的安全命脈",
+            description: "水電系統是家的神經與血管，攸關居住安全與生活品質。啟發裝飾工程提供專業、迅速的水電維修服務，由擁有超過40年經驗的資深師傅團隊，為您解決各種緊急與日常的水電疑難。我們的服務範圍全面，包括：水路問題（如水管漏水、爆管搶修、馬桶/面盆堵塞、水壓不足、熱水器安裝維修）；電路問題（如跳電排查、開關插座更換、燈具線路安裝、老舊電線全面換新、漏電斷路器安裝）；以及預防性安全檢測。我們堅持使用符合安全標準的材料，收費透明，絕不漫天要價。不同於一般水電行，我們擁有裝修工程的專業背景，能從整體空間規劃的角度提供更長遠的建議。無論是突發狀況的緊急搶修，還是為老宅進行水電安全升級，啟發都是您最可靠的選擇。一個電話，專業師傅快速到府，為您即時排憂解難，守護家的每一份安心。",
         }
     ];
 
@@ -20,7 +20,7 @@ const ServiceInfo = () => {
     <>
         <div className="w-full">
         {Serviceinfo_data.map(Serviceinfo_data => (
-            <section className='text-left m-10 mb-[100px]'>
+            <section className='text-left m-10 mb-10'>
                 <div className='m-5'>
                     <h4 className='mb-2 text-xl text-[#AB6732] font-bold'>{Serviceinfo_data.title}</h4>
                     <p className='mb-10 tex-sm text-[#AB6732]'>{Serviceinfo_data.description}</p>

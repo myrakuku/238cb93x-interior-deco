@@ -39,6 +39,8 @@ const youtubeEmbedUrl = [
 
     return(
     <>
+    <title>啟發裝飾工程｜精選裝修案例與實景圖集｜見證設計與工藝之美</title>
+    <meta name='description' content='立即欣賞啟發裝飾工程的精選家居成功案例！我們提供各風格（現代、簡約日式木質等）的實景完工圖、示範單位全景，展示專業設計與細緻工藝。尋找您的裝修靈感，找我們幫你規劃！' />
         <Nav/>
         <section className="w-full mt-10 pt-5 text-left p-10">
             {projectData.map(projectData => (
